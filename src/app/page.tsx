@@ -23,15 +23,15 @@ export default function Home() {
   };
 
   return (
-    <main>
+    <main className='containerMain'>
       {/* <button onClick={toggleColorScheme} className="p-2 bg-blue-500 text-white rounded-md shadow-md hover:bg-blue-600">Alternar Esquema de Cores</button> */}
       <header className='flex justify-center items-center'>
         <Image src={'/logowhite.png'} alt='Logo com gráfico subindo da InvestSmart' width={140} height={60} className='logo'/>
       </header>
 
       <section className={`banner-container`}>
-        <div className='container'>
-          <h1 className='limit-width'>Investimentos Inteligentes. Resultados Confiáveis</h1>
+        <div className='limit-width'>
+          <h1>Investimentos Inteligentes. Resultados Confiáveis</h1>
           <a href="#main"><FiChevronsDown size={40} className='icon-down'/></a>
         </div>
       </section>
