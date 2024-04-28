@@ -36,7 +36,7 @@ export default function Home() {
         </div>
       </section>
     
-      <section id='main'>
+      <section id='main' className='limit-width'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti non suscipit, dolore quis error, quos earum eum maiores dolor assumenda id fugit eaque ducimus molestias hic ab quod nemo facilis?
         Sapiente culpa qui perspiciatis placeat velit minus, commodi id odit accusantium amet vitae provident doloremque eum dolorum officiis inventore consequuntur iure distinctio quisquam earum? Eius rerum vel doloremque officiis facilis!
         Recusandae quia error at tenetur facere quos odio. Similique ex aut placeat ullam expedita fugiat ipsam est! Ducimus voluptatem, tempore exercitationem consectetur recusandae et sapiente fugit, animi libero corrupti pariatur!
