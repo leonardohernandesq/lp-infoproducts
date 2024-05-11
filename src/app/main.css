@@ -1,3 +1,4 @@
+/* All Configs */
 .containerMain {
     width: 100%;
     display:flex;
@@ -8,11 +9,15 @@
 .limit-width{
     max-width: 1280px;
     width:100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
 }
 
+/* Header */
+.logo{
+    padding: 10px 0;
+}
+
+/* Banner */
 .banner-container{
     display: flex;
     flex-direction: column; 
@@ -29,10 +34,6 @@
     position: relative;
 }
 
-.logo{
-    padding: 10px 0;
-}
-
 .icon-down{
     position: absolute;
     bottom:20px;
@@ -46,4 +47,102 @@
     } to {
         bottom:10px;
     }
+}
+
+/* About Us */
+
+.aboutus-container{
+    display: flex;
+    padding: 10rem 0 5rem 0;
+    gap: 40px;
+}
+
+.aboutus-container>div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* How Works */
+
+.how-works-container{
+    padding: 5rem 0;
+}
+
+.how-works-container span{
+    font-size: 72px;
+    font-weight: 900;
+    color: black;
+    text-shadow: 
+    0 0 1px #006eff, 
+    0 0 2px #006eff,
+    0 0 3px #006eff, 
+    0 0 4px #006eff, 
+    0 0 5px #006eff;
+}
+
+.how-works-container .worksbox-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+}
+
+.how-works-container h2{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.worksbox-container .works-box{
+    border: 1px solid #fff;
+    padding: 1.5rem;
+}
+
+.worksbox-container .works-box h3{
+    line-height: 40px;
+    margin-bottom: 10px;   
+}
+
+/* Testemonials */
+
+.testemonials-container{
+    padding: 5rem 0;
+}
+
+.testemonials-container>h2{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.testemonials-columns{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.testemonials-columns article{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 35px 30px;
+    border: 1px solid #006eff;
+}
+
+.testemonials-columns article>h2{
+    line-height: 3rem;
+    margin: 10px 0;
+}
+
+/* Why Choose */
+.why-container{
+    padding: 35px 30px;
+}
+
+/* Contact */
+.contact-container{
+    text-align: center;
+    padding: 35px 30px;
 }
