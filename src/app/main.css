@@ -26,12 +26,29 @@
     text-align: center;
     height: 700px; 
     width:100%;
-    background:#2c2c2c;
+    
+    background-image:url('../../public/bannermain.webp');
+    background-position: center;
+    background-size: cover;
+
     color:#fff;
     font-size: 72px;
     font-weight: 600;
     line-height: 90px;
     position: relative;
+}
+
+.banner-container:after{
+    background-color: #00000070;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    content: '';
+}
+
+.banner-container h1, .banner-container a{
+    z-index: 999;
+    max-width: 1280px;
 }
 
 .icon-down{
@@ -139,10 +156,67 @@
 /* Why Choose */
 .why-container{
     padding: 35px 30px;
+    text-align: center;
+}
+
+.why-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 40px;
+    border: 1px solid #006eff;
+    margin: 15px 0;
+    padding: 30px;
+}
+
+.why-box>div{
+    width: 50%;
+}
+
+.why-box:nth-child(odd){
+    flex-direction: row-reverse;
 }
 
 /* Contact */
 .contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 35px 30px;
+    
+    background-color: #ffffff10;
+    box-shadow: 0px 0px 50px #006eff;
+    max-width: 800px;
+    width: 100%;
+    
+    margin: 80px 0;
+    padding: 60px;
+    border-radius: 30px; 
+}
+
+.contact-container form, .contact-container form div {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+}
+
+.contact-container form {
+    margin-top: 20px;
+}
+
+.contact-container form input{
+    height: 45px;
+    padding: 15px;
+    color: #000;
+    outline: none;
+    border-radius: 10px;
+    background-color: #ffffffd0;
+    margin-bottom: 16px;
+}
+
+footer{
+    padding: 15px 0;
 }
