@@ -5,6 +5,9 @@ import { FiFacebook, FiInstagram, FiLinkedin } from 'react-icons/fi'
 
 export function Testemonials() {
     return (
+        <section className='limit-width testemonials-container'>
+        <h2>Testemunhos</h2>
+
         <div className='testemonials-columns'>
             <article>
                 <Image src={'/person1.jpg'} alt="Carlos Augusto" width={200} height={200} />
@@ -12,13 +15,13 @@ export function Testemonials() {
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, nihil itaque? Incidunt numquam error vel dignissimos, illum mollitia, ex ab vitae ducimus laudantium nisi molestiae, quidem impedit. Nam, impedit iste!</p>
                 <div className='flex gap-3 mt-4'>
                     <Link href={'www.instagram.com'} target='_blank' >
-                        <FiInstagram />
+                        <FiInstagram size={20} />
                     </Link>
                     <Link href={'www.facebook.com'} target='_blank' >
-                        <FiFacebook />
+                        <FiFacebook size={20} />
                     </Link>
                     <Link href={'www.linkedin.com'} target='_blank' >
-                        <FiLinkedin />
+                        <FiLinkedin size={20} />
                     </Link>
                 </div>
             </article>
@@ -28,13 +31,13 @@ export function Testemonials() {
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, nihil itaque? Incidunt numquam error vel dignissimos, illum mollitia, ex ab vitae ducimus laudantium nisi molestiae, quidem impedit. Nam, impedit iste!</p>
                 <div className='flex gap-3 mt-4'>
                     <Link href={'www.instagram.com'} target='_blank' >
-                        <FiInstagram />
+                        <FiInstagram size={20} />
                     </Link>
                     <Link href={'www.facebook.com'} target='_blank' >
-                        <FiFacebook />
+                        <FiFacebook size={20} />
                     </Link>
                     <Link href={'www.linkedin.com'} target='_blank' >
-                        <FiLinkedin />
+                        <FiLinkedin size={20} />
                     </Link>
                 </div>
             </article>
@@ -44,16 +47,18 @@ export function Testemonials() {
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, nihil itaque? Incidunt numquam error vel dignissimos, illum mollitia, ex ab vitae ducimus laudantium nisi molestiae, quidem impedit. Nam, impedit iste!</p>
                 <div className='flex gap-3 mt-4'>
                     <Link href={'www.instagram.com'} target='_blank' >
-                        <FiInstagram />
+                        <FiInstagram size={20} />
                     </Link>
                     <Link href={'www.facebook.com'} target='_blank' >
-                        <FiFacebook />
+                        <FiFacebook size={20} />
                     </Link>
                     <Link href={'www.linkedin.com'} target='_blank' >
-                        <FiLinkedin />
+                        <FiLinkedin size={20} />
                     </Link>
                 </div>
             </article>
         </div>
+      </section>
+        
     )
 }

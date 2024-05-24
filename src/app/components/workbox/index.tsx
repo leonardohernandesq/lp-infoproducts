@@ -2,7 +2,7 @@ import React from 'react'
 import { IWorkBox } from '@/app/interface/IWorkBox'
 
 
-export default function WorkBox({step, title, content}: IWorkBox) {
+export function WorkBox({step, title, content}: IWorkBox) {
   return (
     <div className='works-box'>
         <span>{step}</span>
