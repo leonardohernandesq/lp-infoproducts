@@ -10,7 +10,7 @@
 .limit-width{
     max-width: 1280px;
     width:100%;
-
+    overflow: hidden;
 }
 
 /* Header */
@@ -286,4 +286,23 @@ footer{
 
 .content{
     z-index: 2;
+}
+
+/* Exchange */
+
+.container_exchange{
+    display: flex;
+    gap: 60px;
+    max-width: 1280px;
+    width: 100%;
+    padding: 20px;
+    overflow-x: hidden;
+    border-bottom: 1px #006eff solid;
+}
+
+.box_exchange{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    min-width: 130px;
 }

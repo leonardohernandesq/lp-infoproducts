@@ -8,6 +8,7 @@ import { Testemonials } from './components/testimonials';
 import { WhyChoose } from './components/whychoose';
 import { Contact } from './components/contact';
 import { Footer } from './components/footer';
+import { Exchange } from './components/exchange';
 
 export default function Home() {
 
@@ -15,6 +16,7 @@ export default function Home() {
     <main className='containerMain'>
       <Header />
       <Banner />
+      <Exchange />
       <AboutUs />
       <HowWorks />
       <Testemonials />
