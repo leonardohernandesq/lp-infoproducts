@@ -9,13 +9,14 @@ import { WhyChoose } from './components/whychoose';
 import { Contact } from './components/contact';
 import { Footer } from './components/footer';
 import { Exchange } from './components/exchange';
+import TechnoBanner from './components/technobanner';
 
 export default function Home() {
 
   return (
     <main className='containerMain'>
       <Header />
-      <Banner />
+      <TechnoBanner />
       <Exchange />
       <AboutUs />
       <HowWorks />
