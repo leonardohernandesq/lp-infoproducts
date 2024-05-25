@@ -305,4 +305,15 @@ footer{
     gap: 12px;
     align-items: center;
     min-width: 130px;
+    position: relative;
+    justify-content: center;
+}
+
+.box_exchange::after{
+    height: 100%;
+    width: 2px;
+    background-color: #006eff;
+    content: '';
+    position: absolute;
+    right: -30px;
 }
