@@ -167,6 +167,44 @@
 
 /* Testemonials */
 
+.profile-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    color: white;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.corner-effect {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 60px;
+    height: 60px;
+    background-color: #000; /* Match the body background color */
+    border-radius: 0 0 0 60px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.source, .interest {
+    margin-top: 10px;
+}
+
+.socialmedia a:hover{
+    color: #8b8b8b;
+}
+
 .testemonials-container{
     padding: 5rem 0;
 }
@@ -188,13 +226,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 35px 30px;
-    border: 1px solid #00a8db;
-}
-
-.testemonials-columns article>h2{
-    line-height: 3rem;
-    margin: 10px 0;
+    padding: 45px 10px;
 }
 
 /* Why Choose */
@@ -210,7 +242,7 @@
     align-items: center;
     text-align: left;
     gap: 40px;
-    border: 1px solid #00a8db;
+    border: 1px solid transparent;
     margin: 15px 0;
     padding: 30px;
 }

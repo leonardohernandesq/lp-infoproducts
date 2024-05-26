@@ -15,6 +15,7 @@ import { useTheme } from './context/themeContext';
 import { IColorsTheme } from '@/app/interface/IColorsTheme'
 import Loading from './components/loading';
 import { FiSettings } from 'react-icons/fi';
+import Image from 'next/image';
 
 
 export default function Home() {
@@ -87,6 +88,9 @@ export default function Home() {
               Volatilidade
             </button>
           </>}
+
+
+
           <TechnoBanner />
           <Exchange />
           <AboutUs />
