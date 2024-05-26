@@ -18,7 +18,7 @@ interface LineCartProps {
 
 const NewChart: React.FC<LineCartProps> = ({ data }) => {
   const chartRef = useRef<HTMLCanvasElement>(null);
-  const chartInstance = useRef<Chart>();
+  const chartInstance = useRef<Chart<"doughnut">>();
 
   useEffect(() => {
     if (chartRef.current) {
