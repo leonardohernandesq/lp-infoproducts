@@ -24,14 +24,10 @@ export default function Home() {
     if (storedColor) {
       setColor(storedColor as IColorsTheme['color']);
     }
-  }, []);
+  }, [setColor]);
 
   useEffect(() => {
-    if(color){
-      localStorage.setItem("color", color);
-    } else {
-      localStorage.setItem("color", "empty");
-    }
+    localStorage.setItem("color", color);
   }, [color]);
 
   useEffect(() => {

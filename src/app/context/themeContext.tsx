@@ -17,7 +17,7 @@ export const ThemeContext = createContext<ThemeContextData>({} as ThemeContextDa
 
 export function ThemeProvider({children}: ThemeProviderProps){
     const [isLight, setIsLight] = useState(false);
-    const [color, setColor] = useState<IColorsTheme['color']>('');
+    const [color, setColor] = useState<IColorsTheme['color']>('#00A8DB');
     
     const value: ThemeContextData = {
         isLight,
