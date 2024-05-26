@@ -1,14 +1,34 @@
 /* All Configs */
 ::-webkit-scrollbar{
-    background-color: #006eff;
+    background-color: #00a8db;
     width: 10px;
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: #004aaa;
-    border: 1px solid #003c8a;
+    background-color: #2b2b2b;
+    border: 1px solid #00a8db;
 }
 
+.loading{
+    animation: loading 2s infinite forwards;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+        color: #00a8db;
+    }
+    33%{
+        color: #820056;
+    }
+    66%{
+        color: #00A584;
+    }
+    100% {
+        transform: rotate(360deg);
+        color: #FFA500;
+    }
+}
 
 .containerMain {
     width: 100%;
@@ -97,12 +117,7 @@
     font-size: 72px;
     font-weight: 900;
     color: black;
-    text-shadow: 
-    0 0 1px #006eff, 
-    0 0 2px #006eff,
-    0 0 3px #006eff, 
-    0 0 4px #006eff, 
-    0 0 5px #006eff;
+
 }
 
 .how-works-container .worksbox-container{
@@ -133,7 +148,6 @@
     left: 0%;
     width: 200px;
     height: 200px;
-    background: rgba(0, 110, 255);
     border-radius: 50%;
     transform: translate(-50%, -50%);
     filter: blur(50px);
@@ -175,7 +189,7 @@
     align-items: center;
     text-align: center;
     padding: 35px 30px;
-    border: 1px solid #006eff;
+    border: 1px solid #00a8db;
 }
 
 .testemonials-columns article>h2{
@@ -196,7 +210,7 @@
     align-items: center;
     text-align: left;
     gap: 40px;
-    border: 1px solid #006eff;
+    border: 1px solid #00a8db;
     margin: 15px 0;
     padding: 30px;
 }
@@ -217,14 +231,14 @@
     justify-content: center;
     text-align: center;
     background-image: none;
-    box-shadow: 0px 0px 50px #006eff;
+    box-shadow: 0px 0px 50px #181818;
+    border: 1px solid;
     max-width: 800px;
     width: 100%;
     margin: 80px 0;
     padding: 60px;
     border-radius: 30px; 
     position: relative;
-    transition: ease-in-out 30s;
     overflow: hidden;
 }
 
@@ -273,7 +287,7 @@
 }
 
 .contact-container .button_contact{
-    background-color: #006eff;
+    background-color: #00a8db;
     border-radius: 10px;
     margin-top: 10px;
     font-size: 20px;
@@ -282,7 +296,7 @@
 }
 
 .contact-container .button_contact:hover{
-    background-color: #006effd0;
+    filter: brightness(0.8);
     box-shadow: 0px 0px 20px #000;
 }
 
@@ -303,7 +317,7 @@ footer{
     width: 100%;
     padding: 20px;
     overflow-x: hidden;
-    border-bottom: 1px #006eff solid;
+    border-bottom: 1px transparent solid;
 }
 
 .box_exchange{
@@ -318,7 +332,7 @@ footer{
 .box_exchange::after{
     height: 100%;
     width: 2px;
-    background-color: #006eff;
+    background-color: #525252;
     content: '';
     position: absolute;
     right: -30px;

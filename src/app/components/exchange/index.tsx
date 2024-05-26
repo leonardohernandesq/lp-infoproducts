@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import { exchange } from '@/app/api/invest';
 import Image from 'next/image';
-import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
+import { useTheme } from '@/app/context/themeContext';
+
 
 interface ExchangeItem {
   id: number;
@@ -13,6 +14,7 @@ interface ExchangeItem {
 export function Exchange() {
     const containerRef = useRef<HTMLDivElement>(null);
     const scrollLeftRef = useRef<boolean>(false); // Começar rolando da esquerda para a direita
+    const {color} = useTheme();
 
     useEffect(() => {
         const container = containerRef.current;
@@ -42,8 +44,9 @@ export function Exchange() {
     return (
         <div className='flex items-center gap-3'>
         <div 
-            className='container_exchange' 
+            className={`container_exchange border-${color.substring(1)}`} 
             ref={containerRef} 
+            style={{borderBottom:''}}
         >
             {exchange.map((item: ExchangeItem) => (
             <div key={item.id} className='box_exchange'>

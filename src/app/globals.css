@@ -1,6 +1,95 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.shadow-00A8DB{
+  text-shadow: 
+    0 0 1px #00A8DB, 
+    0 0 2px #00A8DB,
+    0 0 3px #00A8DB, 
+    0 0 4px #00A8DB, 
+    0 0 5px #00A8DB;
+}
+.shadow-820056{
+  text-shadow: 
+    0 0 1px #820056, 
+    0 0 2px #820056,
+    0 0 3px #820056, 
+    0 0 4px #820056, 
+    0 0 5px #820056;
+}
+.shadow-00A584{
+  text-shadow: 
+    0 0 1px #00A584, 
+    0 0 2px #00A584,
+    0 0 3px #00A584, 
+    0 0 4px #00A584, 
+    0 0 5px #00A584;
+}
+.shadow-FFA500{
+  text-shadow: 
+    0 0 1px #FFA500, 
+    0 0 2px #FFA500,
+    0 0 3px #FFA500, 
+    0 0 4px #FFA500, 
+    0 0 5px #FFA500;
+}
+
+.color-00A8DB{
+  color:#00a8db !important;
+}
+.border-00A8DB{
+  border-color:#00a8db !important;
+}
+.background-00A8DB{
+  background-color:#00a8db !important;
+}
+
+.color-820056{
+  color:#820056 !important;
+}
+.border-820056{
+  border-color:#820056 !important;
+}
+.background-820056{
+  background-color:#820056 !important;
+}
+
+.color-00A584{
+  color:#00A584 !important;
+}
+.border-00A584{
+  border-color:#00A584 !important;
+}
+
+.background-00A584{
+  background-color:#00A584 !important;
+}
+
+.color-FFA500{
+  color:#FFA500 !important;
+}
+.border-FFA500{
+  border-color:#FFA500 !important;
+}
+.background-FFA500{
+  background-color:#FFA500 !important;
+}
+
+.backgroundBF-FFA500::before{
+  background-color:#FFA500 !important;
+}
+.backgroundBF-00A584::before{
+  background-color:#00A584 !important;
+}
+.backgroundBF-820056::before{
+  background-color:#820056 !important;
+}
+.backgroundBF-00A8DB::before{
+  background-color:#00a8db !important;
+}
+
+
 body {
     margin: 0;
     padding: 0;

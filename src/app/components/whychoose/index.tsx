@@ -1,12 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
+import { useTheme } from '@/app/context/themeContext'
 
 export function WhyChoose() {
+  const {color} = useTheme();
   return (
     <section className='limit-width why-container'>
         <h2>Porque nós escolher</h2>
 
-        <div className='why-box'>
+        <div className={`why-box border-${color.substring(1)}`}>
           <div>
             <h3>Experiência e Expertise</h3>
             <p>Nossa equipe possui ampla experiência e expertise em investimentos para garantir o melhor serviço aos nossos clientes.
@@ -19,7 +21,7 @@ export function WhyChoose() {
             <Image src={'/experiencia.webp'} alt='' width={600} height={400}/>
           </div>
         </div>
-        <div className='why-box'>
+        <div className={`why-box border-${color.substring(1)}`}>
           <div>
             <h3>Compromisso com o Sucesso</h3>
             <p>Estamos comprometidos com o sucesso financeiro dos nossos clientes, priorizando sua satisfação e sucesso.
@@ -32,7 +34,7 @@ export function WhyChoose() {
             <Image src={'/sucesso.webp'} alt='' width={600} height={400} className='shadow-xl'/>
           </div>
         </div>
-        <div className='why-box'>
+        <div className={`why-box border-${color.substring(1)}`}>
           <div>
             <h3>Transparência e Confiança</h3>
             <p>Valorizamos a transparência em todas as nossas interações, fornecendo informações claras e orientação honesta.

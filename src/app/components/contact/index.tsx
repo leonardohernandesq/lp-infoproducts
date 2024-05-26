@@ -1,6 +1,7 @@
 
 'use client'
 
+import { useTheme } from '@/app/context/themeContext';
 import React, { ReactNode, useState } from 'react'
 
 interface ISubmitContact {
@@ -14,6 +15,7 @@ interface ISubmitContact {
 
 export function Contact() {
     const [isLoading, setIsLoading] = useState(false);
+    const {color} = useTheme();
 
     function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
         event.preventDefault();
@@ -37,7 +39,7 @@ export function Contact() {
     }
 
     return (
-        <section className='limit-width contact-container'>
+        <section className={`limit-width contact-container border-${color.substring(1)}`}>
             <h2 className='content'>Contato</h2>
             <p className='content'>Pronto para transformar seus investimentos? Entre em contato hoje mesmo para uma consulta inicial gratuita.</p>
 
@@ -56,8 +58,7 @@ export function Contact() {
                     <label htmlFor="">Telefone: </label>
                     <input name="tel" type="tel" placeholder='Digite o seu telefone: ' />
                 </div>
-
-                <button type="submit" disabled={isLoading} className={`button_contact ${isLoading && 'opacity-50'}`}>
+                <button type="submit" disabled={isLoading} className={`button_contact background-${color.substring(1)} ${isLoading && 'opacity-50'}`}>
                     {!isLoading && ('Aproveitar a Consultoria Grátis')}
                     {isLoading && ('Carregando...')}
                 </button>
