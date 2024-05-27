@@ -23,7 +23,7 @@ export function WhyChoose() {
                   Contamos com profissionais qualificados que possuem profundo conhecimento do mercado financeiro e das diversas oportunidades de investimento.
                   Estamos sempre em busca de atualizações e aperfeiçoamentos para nos mantermos à frente das tendências e mudanças do mercado,
                   oferecendo estratégias personalizadas e eficazes.
-                </p>
+                </p> 
               </div>
             <div>
               <Image src={'/experiencia.webp'} alt='' width={600} height={400} className='rounded-xl'/>
