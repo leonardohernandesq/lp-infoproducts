@@ -9,10 +9,10 @@ export function WhyChoose() {
     <section className='limit-width why-container'>
         <h2>Porque nós escolher</h2>
         
-        <div className="tabs flex items-center justify-center p-4 my-6">
-          <button className={`${whichChoose === 1 ? 'border-t-2 border-l-2 border-r-2' : 'border-b-2 '} p-4 border-${color.substring(1)}`} onMouseEnter={() => {setWhichChoose(1)}}>Experiencia e Expertise</button>
-          <button className={`${whichChoose === 2 ? 'border-t-2 border-l-2 border-r-2' : 'border-b-2 '} p-4 border-${color.substring(1)}`} onMouseEnter={() => {setWhichChoose(2)}}>Compromisso com o Sucesso</button>
-          <button className={`${whichChoose === 3 ? 'border-t-2 border-l-2 border-r-2' : 'border-b-2 '} p-4 border-${color.substring(1)}`} onMouseEnter={() => {setWhichChoose(3)}}>Transparência e Confiança</button>
+        <div className="tabs flex items-center justify-center p-4 my-6 flex-col sm:flex-row">
+          <button className={`${whichChoose === 1 ? 'sm:border-t-2 sm:border-l-2 sm:border-r-2' : 'sm:border-b-2 '}  p-4 border-${color.substring(1)}`} onMouseEnter={() => {setWhichChoose(1)}}>Experiencia e Expertise</button>
+          <button className={`${whichChoose === 2 ? 'sm:border-t-2 sm:border-l-2 sm:border-r-2' : 'sm:border-b-2 '}  p-4 border-${color.substring(1)}`} onMouseEnter={() => {setWhichChoose(2)}}>Compromisso com o Sucesso</button>
+          <button className={`${whichChoose === 3 ? 'sm:border-t-2 sm:border-l-2 sm:border-r-2' : 'sm:border-b-2 '}  p-4 border-${color.substring(1)}`} onMouseEnter={() => {setWhichChoose(3)}}>Transparência e Confiança</button>
         </div>
 
         {whichChoose === 1 && (

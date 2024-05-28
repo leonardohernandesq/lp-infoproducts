@@ -5,7 +5,7 @@ export function AboutUs() {
     return (
         <section id='main' className='limit-width aboutus-container'>
             <div>
-            <Image src={'/about.jpg'} alt='Logo com gráfico subindo da InvestSmart' width={700} height={460} className='logo'/>
+            <Image src={'/about.jpg'} alt='Logo com gráfico subindo da InvestSmart' width={700} height={460} className='about_image'/>
             </div>
             <div className='about-text'>
             <h2>Bem-vindo à InvestSmart</h2>

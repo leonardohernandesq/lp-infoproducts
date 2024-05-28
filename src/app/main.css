@@ -447,3 +447,63 @@ footer{
     margin-bottom: 50px;
     z-index: 10;
 }
+
+
+@media(max-width:480px){
+    .limit-width{
+        max-width: 400px;
+    }
+    .banner_mac{
+        width: 100%;
+        padding: 0px 10px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .chart_div{
+        height: 35%;
+        width: 75%;
+    }
+    .tabs_charts{
+        width: 80%;
+        display: none;
+    }
+    
+    .container_exchange{
+        max-width: 400px;
+        padding: 10px;
+    }
+
+    .aboutus-container{
+        flex-direction: column;
+        padding: 2rem 0;
+    }
+
+    .aboutus-container div{
+        width: 100%;
+        text-align: center;
+    }
+
+    .how-works-container{
+        padding: 2rem 0;
+    }
+    .worksbox-container{
+        grid-template-columns: 1fr !important;
+    }
+    .testemonials-columns{
+        grid-template-columns: 1fr !important;
+    }
+    .why-container{
+        padding: 35px 0px;
+    }
+    .why-box{
+        flex-direction: column-reverse !important;
+    }
+    .why-box>div{
+        width: 100%;
+    }
+    .contact-container{
+        padding: 30px !important;
+    }
+    footer{text-align: center;}
+}
