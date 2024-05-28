@@ -448,40 +448,67 @@ footer{
     z-index: 10;
 }
 
+@media(max-width:484px){
+    .chart_div{
+        height: 45%;
+        width: 80%;
+    }
 
-@media(max-width:480px){
+    .tabs_charts button{
+        width: 45% !important;
+    }
+
+    .tabs_charts{
+        width: 85% !important;
+    }
+}
+
+
+@media(max-width:1200px){
     .limit-width{
-        max-width: 400px;
+        max-width: 100%;
+        width: 95%;
     }
     .banner_mac{
-        width: 100%;
         padding: 0px 10px;
+        width: auto;
+        background-image: url('../../public/tablet.webp');
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
     .chart_div{
-        height: 35%;
+        height: 45%;
         width: 75%;
     }
     .tabs_charts{
-        width: 80%;
-        display: none;
+        width: 70%;
+        flex-wrap:wrap;
+        margin-bottom: 2rem;
     }
     
     .container_exchange{
-        max-width: 400px;
+        max-width: 100%;
+        width: 95%;
         padding: 10px;
     }
 
     .aboutus-container{
         flex-direction: column;
+
         padding: 2rem 0;
     }
 
     .aboutus-container div{
         width: 100%;
         text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tabs_charts button{
+        width: 46%;
     }
 
     .how-works-container{
@@ -504,6 +531,7 @@ footer{
     }
     .contact-container{
         padding: 30px !important;
+        margin: 30px 0;
     }
     footer{text-align: center;}
 }

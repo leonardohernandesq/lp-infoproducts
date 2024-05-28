@@ -42,7 +42,7 @@ export function Exchange() {
     }, []);
 
     return (
-        <div className='flex items-center gap-3'>
+        <div className='flex items-center justify-center gap-3 w-full mx-auto'>
         <div 
             className={`container_exchange border-${color.substring(1)}`} 
             ref={containerRef} 
